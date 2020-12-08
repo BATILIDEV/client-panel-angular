@@ -1,0 +1,46 @@
+<form (ngSubmit)="addAddress()" [formGroup]="form">
+ <div class="col-md-6 row  my-2 mx-auto" >
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input formControlName="type" type="text"  id="type" class="form-control" placeholder="shipping or billing" >
+
+      <!-- <select formControlName="type" multiple class="form-control"  id="type">
+        <option>Billing</option>
+        <option>Shipping</option>
+      </select> -->
+    </div>
+</div>
+<div class="col-md-6 row  my-2 mx-auto">
+    <div class="from-group">
+        <label for="country">country</label>
+       <input formControlName="country" type="text"  id="country" class="form-control" placeholder="country" >
+
+   </div>
+</div>
+<div class="col-md-6 row  my-2 mx-auto">
+    <div class="from-group">
+        <label for="city">city</label>
+        <input formControlName="city" type="text"  id="city" class="form-control" placeholder="city" >
+
+   </div>
+</div>
+   
+   <div class="col-md-6 row  my-2 mx-auto">
+    <div class="from-group">
+        <label for="street">street</label>
+       <input formControlName="street" type="text"  id="street" class="form-control" placeholder="street" >
+    
+    </div>
+   </div>
+   <div class="col-md-6 row  my-2 mx-auto">
+    <div class="from-group">
+        <label for="code_postal">code_postal</label>
+       <input formControlName="code_postal" type="text"  id="code_postal" class="form-control" placeholder="code_postal" >
+    
+    </div>
+   </div>
+   <div class="col-md-6 row  my-2 mx-auto">
+
+   <button type="submit" class="btn btn-primary">Submit</button>
+   </div>
+</form>
